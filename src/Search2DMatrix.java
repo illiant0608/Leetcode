@@ -21,7 +21,7 @@ public class Search2DMatrix {
 
         while (start <= end) {
             mid = start + (end - start) / 2;
-            
+
             if (mid >= y)
                 break;
 
