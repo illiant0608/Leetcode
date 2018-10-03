@@ -16,7 +16,7 @@ public class SummaryRange {
                 i++;
 
             if (a != nums[i]) {
-                res.add(a + "—>" + nums[i]);
+                res.add(a + "->" + nums[i]);
             } else {
                 res.add(a + "");
             }
