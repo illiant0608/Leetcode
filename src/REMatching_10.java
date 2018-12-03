@@ -16,7 +16,7 @@ public class REMatching_10 {
     }
 
     //dp solution
-    
+
 
     public static void main(String[] args) {
         REMatching_10 test = new REMatching_10();
