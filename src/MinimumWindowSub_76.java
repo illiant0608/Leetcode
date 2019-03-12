@@ -47,9 +47,4 @@ public class MinimumWindowSub_76 {
         return s.substring(minLeft, minLeft + minLen);
     }
 
-    public static void main(String[] args) {
-        int mod = (int)(1e9 + 7);
-        System.out.println(1 % mod);
-    }
-
 }
