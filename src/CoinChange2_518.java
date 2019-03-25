@@ -1,5 +1,5 @@
 public class CoinChange2_518 {
-    public int change(int amount, int[] coins) {
+    public static int change(int amount, int[] coins) {
 //        int[][] dp = new int[coins.length+1][amount+1];
 //        dp[0][0] = 1;
 //
@@ -24,5 +24,11 @@ public class CoinChange2_518 {
         }
 
         return dp[amount];
+
+    }
+
+    public static void main(String[] args) {
+        int coins[] = {1, 4, 16, 64};
+        System.out.println(change(200, coins));
     }
 }
