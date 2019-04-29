@@ -20,6 +20,7 @@ public class BinaryTreeZigZag_103 {
 
         LinkedList<Integer> temp;
 
+
         while (!queue.isEmpty()) {
             temp = new LinkedList<>();
             for (int i = queue.size();i > 0;i--) {
