@@ -19,6 +19,20 @@ public class KthLargest {
         }
     }
 
+    public int findKthLargest(int[] nums, int k) {
+        this.k = k;
+        queue = new PriorityQueue<>();
+
+        for (int num: nums) {
+            queue.offer(num);
+            //只需要k个元素
+            if (queue.size() > k)
+                queue.poll();
+        }
+
+        return queue.poll();
+    }
+
     public int add(int val) {
         queue.offer(val);
         if (queue.size() > k)

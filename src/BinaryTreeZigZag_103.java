@@ -23,7 +23,7 @@ public class BinaryTreeZigZag_103 {
 
         while (!queue.isEmpty()) {
             temp = new LinkedList<>();
-            for (int i = queue.size();i > 0;i--) {
+            for (int i = queue.size();i > 0;i--) { //
                 TreeNode curr = queue.poll();
                 if (left2right)
                     temp.addFirst(curr.val);
