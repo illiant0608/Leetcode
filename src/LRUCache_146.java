@@ -5,7 +5,8 @@ import java.util.Map;
  * leetcode 146 https://leetcode.com/problems/lru-cache/
  */
 
-public class LRUCache {
+// 用链表维持一个队列
+public class LRUCache_146 {
     class Node {
         int val;
         int key;
@@ -23,7 +24,7 @@ public class LRUCache {
     Node head;
     Node tail;
 
-    public LRUCache(int capacity) {
+    public LRUCache_146(int capacity) {
         this.capacity = capacity;
         head = new Node();
         tail = new Node();
@@ -82,7 +83,7 @@ public class LRUCache {
     }
 
     public static void main(String[] args) {
-        LRUCache cache = new LRUCache(2);
+        LRUCache_146 cache = new LRUCache_146(2);
         cache.put(1, 1);
         cache.get(1);
     }

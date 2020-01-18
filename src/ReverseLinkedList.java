@@ -51,7 +51,7 @@ public class ReverseLinkedList {
             ListNode next = head.next;
             head.next = newHead;
             newHead = head;
-            head = next;
+            head.next = next;
         }
 
         return newHead;
