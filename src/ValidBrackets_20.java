@@ -17,4 +17,9 @@ public class ValidBrackets_20 {
 
         return stack.empty();
     }
+
+    public static void main(String[] args) {
+        ValidBrackets_20 test = new ValidBrackets_20();
+        test.isValid("()[]{}");
+    }
 }
